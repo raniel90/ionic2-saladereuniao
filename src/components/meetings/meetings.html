@@ -1,0 +1,18 @@
+<ion-row>
+    <ion-col class="meetings-ion-row-header">
+        Time
+    </ion-col>
+    <ion-col class="meetings-ion-row-header">
+        Assunto
+    </ion-col>
+</ion-row>
+<div *ngFor="let meeting of meetings">
+    <ion-card (click)="detailMeeting(meeting)">
+        <ion-card-header>
+            {{ meeting.team.name }}
+        </ion-card-header>
+        <ion-card-content>
+            {{ meeting.title }}
+        </ion-card-content>
+    </ion-card>
+</div>

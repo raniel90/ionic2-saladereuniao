@@ -1,0 +1,31 @@
+<ion-header>
+
+    <ion-navbar color="trinity">
+        <ion-title>{{meeting.title}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-row>
+        <h4>{{meeting.description}}</h4>
+    </ion-row>
+
+    <ion-row>
+        <span>Time solicitante: {{meeting.team.name}}</span>
+    </ion-row>
+
+    <ion-row>
+        <span>Data/Hora início: {{meeting.dateTimeBegin}}</span>
+    </ion-row>
+
+    <ion-row>
+        <span>Data/Hora Fim: {{meeting.dateTimeEnd}}</span>
+    </ion-row>
+
+    <ion-row>
+        <span>Valor: {{ valor | currency:'BRL':true:'2.2-4'}}</span>
+    </ion-row>
+
+</ion-content>
